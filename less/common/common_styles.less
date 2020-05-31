@@ -1,0 +1,25 @@
+// main: ../style.less
+
+// Parametric mixins
+
+.main-btn-big {
+  width: 170px;
+  height: 53px;
+  background: #fff;
+  color: @btn-color;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  .txt-font(800, Raleway, 14px, 23px);
+}
+
+.main-btn-big:hover {
+  background: @btn-bg-hover-color;
+  color: @main-color;
+}
+
+.main-btn-big:active {
+  background: @main-color;
+  color: @btn-bg-hover-color;
+}

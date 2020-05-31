@@ -1,0 +1,22 @@
+// main: ../style.less
+
+// Variables
+
+@btn-color: #8c8c8c;
+@btn-bg-hover-color: #998675;
+
+// Parametric mixins
+
+.flex-box(@wrap, @justify, @align-items) {
+  display: flex;
+  flex-wrap: @wrap;
+  justify-content: @justify;
+  align-items: @align-items;
+}
+
+// Styles
+
+.container {
+  width: @main-width;
+  margin: 0 auto;
+}

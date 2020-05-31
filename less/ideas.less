@@ -1,0 +1,32 @@
+// main: style.less
+
+// Variables
+
+@ideas-title-color: #555;
+@ideas-text-color: #8c8c8c;
+@ideas-text-width: 769px;
+@ideas-bg-color: #fbfaf8;
+
+// Styles
+
+.ideas {
+  min-height: 700px;
+  padding: 83px 581px 0;
+  background-color: @ideas-bg-color;
+  background: url(../img/ideas_bg_img.jpg) bottom / 1230px 482px no-repeat @ideas-bg-color;
+
+  &-title {
+    width: @ideas-text-width;
+    margin: 0 0 24px 0;
+    color: @ideas-title-color;
+    text-align: center;
+    .txt-font(600, Raleway, 30px, 1.2);
+  }
+
+  &-text {
+    width: @ideas-text-width;
+    color: @ideas-text-color;
+    text-align: center;
+    .txt-font(300, Montserrat, 16px, 28px);
+  }
+}

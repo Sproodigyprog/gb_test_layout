@@ -1,0 +1,61 @@
+// main: style.less
+
+// Variables
+
+@services-title-color: #555;
+@services-txt-color: #8c8c8c;
+@services-underscore-color: #f1eee9;
+@services-card-hover-color: #c7b299;
+
+// Styles
+
+.services {
+  padding: 80px 377px;
+  .flex-box(wrap, space-between, center);
+
+  &-card {
+    width: 268px;
+    flex-direction: column;
+    .flex-box(wrap, space-between, center);
+
+    &-icon {
+      margin: 0 0 29px 0;
+      fill: @services-title-color;
+    }
+
+    &-title {
+      display: block;
+      margin: 0 0 14px 0;
+      color: @services-title-color;
+      .txt-font(600, Raleway, 22px, 1.2);
+    }
+
+    &-text {
+      margin: 0 0 30px 0;
+      text-align: center;
+      color: @services-txt-color;
+      .txt-font(300, Montserrat, 14px, 21px);
+    }
+
+    &:hover .services-card-icon {
+      fill: @services-card-hover-color;
+    }
+
+    &:hover .services-card-title {
+      color: @services-card-hover-color;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 70px;
+      height: 3px;
+      background: @services-underscore-color;
+    }
+
+    &:hover::after {
+      background: @services-card-hover-color;
+    }
+  }
+
+}
