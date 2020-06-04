@@ -25,7 +25,7 @@
     width: 181px;
     margin: 0 219px 0 0;
     text-decoration: none;
-    .flex-box(no-wrap, space-between, center);
+    .flex-box(nowrap, space-between, center);
 
     &-icon {
       fill: @main-color;
@@ -174,26 +174,29 @@
       color: @main-color;
       .txt-font(300, Montserrat, 16px, 22px);
     }
-  }
-}
 
-.pagination {
-  width: 98px;
-  margin: 0 auto;
-  .flex-box(wrap, space-between, center);
-
-  &-elem {
-    width: 7px;
-    height: 7px;
-    border: 2px solid transparent;
-    border-radius: 50%;
-    background: @main-color;
-    opacity: .5;
   }
 
-  &-elem:hover {
-    transform: scale(1.6);
-    background: transparent;
-    border: 2px solid @header-hover-pagination-color;
+  &-pagination {
+    width: 98px;
+    margin: 0 auto;
+    position: relative;
+    top: 317px;
+    .flex-box(wrap, space-between, center);
+
+    &-elem {
+      width: 7px;
+      height: 7px;
+      border: 2px solid transparent;
+      border-radius: 50%;
+      background: @main-color;
+      opacity: .5;
+    }
+
+    &-elem:hover {
+      transform: scale(1.6);
+      background: transparent;
+      border: 2px solid @header-hover-pagination-color;
+    }
   }
 }

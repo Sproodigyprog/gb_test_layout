@@ -1,25 +1,56 @@
 // main: ../style.less
 
-// Parametric mixins
+// Variables
+
+@btn-text-color: #8c8c8c;
+@btn-bg-color: #998675;
+@main-btn-big-width: 170px;
+@main-btn-big-height: 53px;
+@main-btn-small-border-color: #ebebeb;
+@main-btn-border-radius: 3px;
+
+// Styles
 
 .main-btn-big {
-  width: 170px;
-  height: 53px;
-  background: #fff;
-  color: @btn-color;
+  width: @main-btn-big-width;
+  min-height: @main-btn-big-height;
+  background: @btn-bg-color;
+  color: @main-color;
   border: none;
   outline: none;
-  border-radius: 3px;
+  border-radius: @main-btn-border-radius;
   text-transform: uppercase;
   .txt-font(800, Raleway, 14px, 23px);
 }
 
 .main-btn-big:hover {
-  background: @btn-bg-hover-color;
-  color: @main-color;
+  border: 1px solid @btn-bg-color;
+  background: @main-color;
+  color: @btn-bg-color;
 }
 
 .main-btn-big:active {
+  background: @btn-bg-color;
+  color: @main-color;
+}
+
+.main-btn-small {
+  padding: 5px 19px;
   background: @main-color;
-  color: @btn-bg-hover-color;
+  color: @btn-text-color;
+  border: 1px solid @main-btn-small-border-color;
+  outline: none;
+  border-radius: @main-btn-border-radius;
+  text-transform: capitalize;
+  .txt-font(300, Montserrat, 14px, 21px);
+}
+
+.main-btn-small:hover {
+  background: @btn-bg-color;
+  color: @main-color;
+}
+
+.main-btn-small:active {
+  background: @main-color;
+  color: @btn-bg-color;
 }
