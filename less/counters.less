@@ -1,0 +1,59 @@
+// main: style.less
+
+// Variables
+
+@counters-item-width: 136px;
+
+@counters-bg-color: #f4f585;
+@counters-gradient-color1: #211b19;
+@counters-gradient-color2: #4e3427;
+@counters-item-icon-color: #c7b299;
+
+// Styles
+
+.counters {
+  padding: 69px 504px 60px 496px;
+  background-color: @counters-bg-color;
+  background-image: linear-gradient(90.0deg, @purchase-theme-gradient-color1 0%, @purchase-theme-gradient-color2 100%);
+  .flex-box(wrap, space-between, center);
+
+  &-item {
+    width: @counters-item-width;
+    margin: 0;
+    flex-direction: column;
+    .flex-box(wrap, space-between, center);
+
+    &-icon {
+      margin: 0 0 26px 0;
+      fill: @counters-item-icon-color;
+    }
+
+    &-caption {
+      text-align: center;
+
+      &-count {
+        display: block;
+        margin: 0 0 10px 0;
+        color: @main-color;
+        .txt-font(200, Montserrat, 48px, 36px);
+      }
+
+      &-descr {
+        display: block;
+        text-transform: uppercase;
+        margin: 0 0 30px 0;
+        color: @counters-item-icon-color;
+        .txt-font(300, Montserrat, 14px, 20px);
+      }
+    }
+
+  }
+
+  .counters-item::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: @main-color;
+  }
+}

@@ -1,0 +1,100 @@
+// main: style.less
+
+// Variables
+
+@projects-title-color: #555;
+@projects-txt-color: #8c8c8c;
+@figcaption-title-color: #c7b299;
+@figcaption-text-color: #d1d1d1;
+@figcaption-bg-color: #fbfaf8;
+@figcaption-bg-hover-color: #362f2d;
+
+// Styles
+
+.projects {
+  padding: 80px 377px;
+  flex-direction: column;
+  .flex-box(wrap, space-between, center);
+
+  &-title {
+    margin: 0 0 14px 0;
+    color: @projects-title-color;
+    .txt-font(600, Raleway, 30px, 1.2);
+  }
+
+  &-descr {
+    margin: 0 0 34px 0;
+    width: 769px;
+    color: @projects-txt-color;
+    text-align: center;
+    .txt-font(300, Montserrat, 16px, 28px);
+  }
+
+  &-categ {
+    margin: 0 0 40px 0;
+    width: 605px;
+    .flex-box(wrap, space-between, center);
+  }
+
+  &-galery {
+    margin: 0 0 40px 0;
+    width: @content-width;
+    min-height: 704px;
+    align-content: space-between;
+    .flex-box(wrap, space-between, center);
+
+    &-item {
+      margin: 0;
+      width: 370px;
+
+      &-img {
+        margin: 0 0 -3px 0;
+      }
+
+      &-caption {
+        width: 370px;
+        padding: 17px;
+        box-sizing: border-box;
+        background: @figcaption-bg-color;
+        // .flex-box(wrap, flex-start, center);
+
+        &-title {
+          color: @figcaption-title-color;
+          .txt-font(500, Raleway, 20px, 1.2);
+        }
+
+        &-text {
+          margin: 0;
+          color: @figcaption-text-color;
+          .txt-font(300, Montserrat, 14px, 20px);
+        }
+
+        &::after {
+          content: "";
+          display: inline-block;
+          border: 30px solid transparent;
+          border-bottom: 13px solid @figcaption-bg-color;
+          position: relative;
+          top: -110px;
+          left: -10px;
+        }
+      }
+
+      &:hover .projects-galery-item-caption {
+        background: @figcaption-bg-hover-color;
+      }
+
+      &:hover .projects-galery-item-caption-title {
+        color: @main-color;
+      }
+
+      &:hover .projects-galery-item-caption-text {
+        color: @figcaption-title-color;
+      }
+
+      &:hover .projects-galery-item-caption::after {
+        border-bottom-color: @figcaption-bg-hover-color;
+      }
+    }
+  }
+}

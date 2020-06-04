@@ -1,0 +1,40 @@
+// main: style.less
+
+// Variables
+
+@purchase-theme-text-width: 769px;
+
+@purchase-theme-title-color: #c7b299;
+@purchase-theme-text-color: #615855;
+@purchase-theme-bg-color: #f4f5f8;
+@purchase-theme-gradient-color1: #211b19;
+@purchase-theme-gradient-color2: #4e3427;
+
+// Styles
+
+.theme-purchase {
+  padding: 48px 375px;
+  background-color: @purchase-theme-bg-color;
+  background-image: linear-gradient(90.0deg, @purchase-theme-gradient-color1 0%, @purchase-theme-gradient-color2 100%);
+  .flex-box(wrap, space-between, center);
+
+  &-wrp {
+    width: 530px;
+
+    &-title {
+      text-transform: capitalize;
+      color: @purchase-theme-title-color;
+      .txt-font(400, Raleway, 28px, 1.2);
+
+      &-part {
+        color: @main-color;
+      }
+    }
+
+    &-text {
+      margin: 0;
+      color: @purchase-theme-text-color;
+      .txt-font(300, Montserrat, 18px, 1.2);
+    }
+  }
+}
