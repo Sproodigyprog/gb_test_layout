@@ -544,33 +544,39 @@
 .projects-galery-item {
   margin: 0;
   width: 370px;
+  position: relative;
 }
 .projects-galery-item-img {
-  margin: 0 0 -3px 0;
+  display: block;
 }
 .projects-galery-item-caption {
   width: 370px;
-  padding: 17px;
+  padding: 28px;
   box-sizing: border-box;
   background: #fbfaf8;
+  position: relative;
 }
 .projects-galery-item-caption-title {
+  display: block;
   color: #c7b299;
   font: 500 20px/1.2 Raleway;
 }
 .projects-galery-item-caption-text {
-  margin: 0;
+  display: block;
   color: #d1d1d1;
   font: 300 14px/20px Montserrat;
 }
-.projects-galery-item-caption::after {
+.projects-galery-item-caption::before {
   content: "";
   display: inline-block;
   border: 30px solid transparent;
   border-bottom: 13px solid #fbfaf8;
-  position: relative;
-  top: -110px;
-  left: -10px;
+  position: absolute;
+  top: -40px;
+  left: 15px;
+}
+.projects-galery-item:hover .projects-galery-item-img {
+  filter: brightness(70%);
 }
 .projects-galery-item:hover .projects-galery-item-caption {
   background: #362f2d;
@@ -581,6 +587,31 @@
 .projects-galery-item:hover .projects-galery-item-caption-text {
   color: #c7b299;
 }
-.projects-galery-item:hover .projects-galery-item-caption::after {
+.projects-galery-item:hover .projects-galery-item-caption::before {
   border-bottom-color: #362f2d;
+}
+.projects-galery-item:hover .projects-galery-btn-link,
+.projects-galery-item:hover .projects-galery-btn-search {
+  display: block;
+}
+.projects-galery-btn-link,
+.projects-galery-btn-search {
+  padding: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  fill: #fff;
+  position: absolute;
+  top: 106px;
+  display: none;
+}
+.projects-galery-btn-link:hover,
+.projects-galery-btn-search:hover {
+  fill: #c7b299;
+}
+.projects-galery-btn-link {
+  left: 144px;
+}
+.projects-galery-btn-search {
+  right: 144px;
 }

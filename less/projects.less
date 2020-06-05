@@ -4,10 +4,10 @@
 
 @projects-title-color: #555;
 @projects-txt-color: #8c8c8c;
-@figcaption-title-color: #c7b299;
-@figcaption-text-color: #d1d1d1;
-@figcaption-bg-color: #fbfaf8;
-@figcaption-bg-hover-color: #362f2d;
+@projects-item-title-color: #c7b299;
+@projects-item-text-color: #d1d1d1;
+@projects-item-bg-color: #fbfaf8;
+@projects-item-bg-hover-color: #362f2d;
 
 // Styles
 
@@ -46,42 +46,48 @@
     &-item {
       margin: 0;
       width: 370px;
+      position: relative;
 
       &-img {
-        margin: 0 0 -3px 0;
+        display: block;
       }
 
       &-caption {
         width: 370px;
-        padding: 17px;
+        padding: 28px;
         box-sizing: border-box;
-        background: @figcaption-bg-color;
-        // .flex-box(wrap, flex-start, center);
+        background: @projects-item-bg-color;
+        position: relative;
 
         &-title {
-          color: @figcaption-title-color;
+          display: block;
+          color: @projects-item-title-color;
           .txt-font(500, Raleway, 20px, 1.2);
         }
 
         &-text {
-          margin: 0;
-          color: @figcaption-text-color;
+          display: block;
+          color: @projects-item-text-color;
           .txt-font(300, Montserrat, 14px, 20px);
         }
 
-        &::after {
+        &::before {
           content: "";
           display: inline-block;
           border: 30px solid transparent;
-          border-bottom: 13px solid @figcaption-bg-color;
-          position: relative;
-          top: -110px;
-          left: -10px;
+          border-bottom: 13px solid @projects-item-bg-color;
+          position: absolute;
+          top: -40px;
+          left: 15px;
         }
       }
 
+      &:hover .projects-galery-item-img {
+        filter: brightness(70%);
+      }
+
       &:hover .projects-galery-item-caption {
-        background: @figcaption-bg-hover-color;
+        background: @projects-item-bg-hover-color;
       }
 
       &:hover .projects-galery-item-caption-title {
@@ -89,12 +95,41 @@
       }
 
       &:hover .projects-galery-item-caption-text {
-        color: @figcaption-title-color;
+        color: @projects-item-title-color;
       }
 
-      &:hover .projects-galery-item-caption::after {
-        border-bottom-color: @figcaption-bg-hover-color;
+      &:hover .projects-galery-item-caption::before {
+        border-bottom-color: @projects-item-bg-hover-color;
       }
+
+      &:hover .projects-galery-btn-link,
+      &:hover .projects-galery-btn-search {
+        display: block;
+      }
+    }
+
+    &-btn-link,
+    &-btn-search {
+      padding: 0;
+      background: transparent;
+      border: none;
+      outline: none;
+      fill: @main-color;
+      position: absolute;
+      top: 106px;
+      display: none;
+
+      &:hover {
+        fill: @projects-item-title-color;
+      }
+    }
+
+    &-btn-link {
+      left: 144px;
+    }
+
+    &-btn-search {
+      right: 144px;
     }
   }
 }
