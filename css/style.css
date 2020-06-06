@@ -7,7 +7,7 @@
   outline: none;
   border-radius: 3px;
   text-transform: uppercase;
-  font: 800 14px/23px Raleway;
+  font: 800 14px/23px Raleway, Arial, sans-serif;
 }
 .main-btn-big:hover {
   border: 1px solid #998675;
@@ -26,7 +26,7 @@
   outline: none;
   border-radius: 3px;
   text-transform: capitalize;
-  font: 300 14px/21px Montserrat;
+  font: 300 14px/21px Montserrat, Arial, sans-serif;
 }
 .main-btn-small:hover {
   background: #998675;
@@ -213,7 +213,7 @@
 .main-header-wrp .logo-caption {
   color: #fff;
   text-transform: capitalize;
-  font: 400 34px/1.2 Raleway;
+  font: 400 34px/1.2 Raleway, Arial, sans-serif;
 }
 .main-header-wrp .logo:hover .logo-icon {
   fill: #c7b299;
@@ -245,7 +245,7 @@
   color: #fff;
   text-decoration: none;
   text-transform: capitalize;
-  font: 300 14px/1.2 Montserrat;
+  font: 300 14px/1.2 Montserrat, Arial, sans-serif;
 }
 .main-header-wrp .main-menu-list-item-link:hover {
   color: #c7b299;
@@ -321,17 +321,17 @@
 .carousel-slogan-mark {
   margin: 0 0 14px 0;
   color: #fff;
-  font: 500 35px/1.2 Raleway;
+  font: 500 35px/1.2 Raleway, Arial, sans-serif;
 }
 .carousel-slogan-title {
   margin: 0 0 7px 0;
   color: #fff;
-  font: 800 52px/1.2 Raleway;
+  font: 800 52px/1.2 Raleway, Arial, sans-serif;
 }
 .carousel-slogan-txt {
   margin: 0 0 52px 0;
   color: #fff;
-  font: 300 16px/22px Montserrat;
+  font: 300 16px/22px Montserrat, Arial, sans-serif;
 }
 .carousel-pagination {
   width: 98px;
@@ -379,13 +379,13 @@
   display: block;
   margin: 0 0 14px 0;
   color: #555;
-  font: 600 22px/1.2 Raleway;
+  font: 600 22px/1.2 Raleway, Arial, sans-serif;
 }
 .services-card-text {
   margin: 0 0 30px 0;
   text-align: center;
   color: #8c8c8c;
-  font: 300 14px/21px Montserrat;
+  font: 300 14px/21px Montserrat, Arial, sans-serif;
 }
 .services-card:hover .services-card-icon {
   fill: #c7b299;
@@ -414,13 +414,13 @@
   margin: 0 0 24px 0;
   color: #555;
   text-align: center;
-  font: 600 30px/1.2 Raleway;
+  font: 600 30px/1.2 Raleway, Arial, sans-serif;
 }
 .ideas-text {
   width: 769px;
   color: #8c8c8c;
   text-align: center;
-  font: 300 16px/28px Montserrat;
+  font: 300 16px/28px Montserrat, Arial, sans-serif;
 }
 .theme-purchase {
   padding: 48px 375px;
@@ -437,7 +437,7 @@
 .theme-purchase-wrp-title {
   text-transform: capitalize;
   color: #c7b299;
-  font: 400 28px/1.2 Raleway;
+  font: 400 28px/1.2 Raleway, Arial, sans-serif;
 }
 .theme-purchase-wrp-title-part {
   color: #fff;
@@ -445,7 +445,7 @@
 .theme-purchase-wrp-text {
   margin: 0;
   color: #615855;
-  font: 300 18px/1.2 Montserrat;
+  font: 300 18px/1.2 Montserrat, Arial, sans-serif;
 }
 .counters {
   padding: 69px 504px 60px 496px;
@@ -476,14 +476,14 @@
   display: block;
   margin: 0 0 10px 0;
   color: #fff;
-  font: 200 48px/36px Montserrat;
+  font: 200 48px/36px Montserrat, Arial, sans-serif;
 }
 .counters-item-caption-descr {
   display: block;
   text-transform: uppercase;
   margin: 0 0 30px 0;
   color: #c7b299;
-  font: 300 14px/20px Montserrat;
+  font: 300 14px/20px Montserrat, Arial, sans-serif;
 }
 .counters .counters-item::after {
   content: '';
@@ -491,17 +491,6 @@
   width: 30px;
   height: 2px;
   background: #fff;
-}
-.partners {
-  padding: 140px 405px;
-  background: url(../img/partners_bg_img.jpg) center / cover no-repeat rgba(17, 17, 17, 0.7);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-.partners-link {
-  display: block;
 }
 .projects {
   padding: 80px 377px;
@@ -514,14 +503,14 @@
 .projects-title {
   margin: 0 0 14px 0;
   color: #555;
-  font: 600 30px/1.2 Raleway;
+  font: 600 30px/1.2 Raleway, Arial, sans-serif;
 }
 .projects-descr {
   margin: 0 0 34px 0;
   width: 769px;
   color: #8c8c8c;
   text-align: center;
-  font: 300 16px/28px Montserrat;
+  font: 300 16px/28px Montserrat, Arial, sans-serif;
 }
 .projects-categ {
   margin: 0 0 40px 0;
@@ -559,12 +548,12 @@
 .projects-galery-item-caption-title {
   display: block;
   color: #c7b299;
-  font: 500 20px/1.2 Raleway;
+  font: 500 20px/1.2 Raleway, Arial, sans-serif;
 }
 .projects-galery-item-caption-text {
   display: block;
   color: #d1d1d1;
-  font: 300 14px/20px Montserrat;
+  font: 300 14px/20px Montserrat, Arial, sans-serif;
 }
 .projects-galery-item-caption::before {
   content: "";
@@ -614,4 +603,69 @@
 }
 .projects-galery-btn-search {
   right: 144px;
+}
+.video {
+  width: 100%;
+  min-height: 705px;
+  background: rgba(17, 17, 17, 0.5);
+  position: relative;
+  display: flex;
+}
+.video-presentation {
+  width: 100%;
+  height: 705px;
+  object-fit: cover;
+}
+.video-descr {
+  width: 552px;
+  position: absolute;
+  padding: 209px 684px;
+  text-align: center;
+}
+.video-descr-control {
+  width: 100px;
+  height: 100px;
+  margin: 0 0 36px 0;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.video-descr-control-icon {
+  fill: #fff;
+}
+.video-descr-control:hover .video-descr-control-icon {
+  fill: #d3c1ad;
+}
+.video-descr-control:active .video-descr-control-icon {
+  fill: #f4a034;
+}
+.video-descr-title {
+  margin: 0 0 20px 0;
+  color: #fff;
+  text-transform: capitalize;
+  font: 500 30px/1.2 Raleway, Arial, sans-serif;
+}
+.video-descr-text {
+  margin: 0 0 32px 0;
+  color: #fff;
+  font: 300 16px/23px Montserrat, Arial, sans-serif;
+}
+.video-descr-time {
+  color: #c7b299;
+  font: 400 14px/24px Montserrat, Arial, sans-serif;
+}
+.partners {
+  padding: 140px 405px;
+  background: url(../img/partners_bg_img.jpg) center / cover no-repeat rgba(17, 17, 17, 0.7);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.partners-link {
+  display: block;
+}
+.partners-link:hover {
+  filter: brightness(60%);
 }

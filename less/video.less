@@ -1,0 +1,72 @@
+// main: style.less
+
+// Variables
+
+@video-bg-color: rgba(17,17,17,0.5);
+@video-descr-btn-bg-color: rgba(0, 0, 0 ,0.2);
+@video-descr-btn-hover-color: #d3c1ad;
+@video-descr-btn-active-color: #f4a034;
+@video-descr-time-color: #c7b299;
+
+// Styles
+
+.video {
+  width: 100%;
+  min-height: 705px;
+  background: @video-bg-color;
+  position: relative;
+  display: flex;
+
+  &-presentation {
+    width: 100%;
+    height: 705px;
+    object-fit: cover;
+  }
+
+  &-descr {
+    width: 552px;
+    position: absolute;
+    padding: 209px 684px;
+    text-align: center;
+
+    &-control {
+      width: 100px;
+      height: 100px;
+      margin: 0 0 36px 0;
+      border: none;
+      border-radius: 50%;
+      outline: none;
+      background-color: @video-descr-btn-bg-color;
+
+      &-icon {
+        fill: @main-color;
+      }
+
+      &:hover .video-descr-control-icon {
+        fill: @video-descr-btn-hover-color;
+      }
+
+      &:active .video-descr-control-icon {
+        fill: @video-descr-btn-active-color;
+      }
+    }
+
+    &-title {
+      margin: 0 0 20px 0;
+      color: @main-color;
+      text-transform: capitalize;
+      .txt-font(500, Raleway, 30px, 1.2);
+    }
+
+    &-text {
+      margin: 0 0 32px 0;
+      color: @main-color;
+      .txt-font(300, Montserrat, 16px, 23px);
+    }
+
+    &-time {
+      color: @video-descr-time-color;
+      .txt-font(400, Montserrat, 14px, 24px);
+    }
+  }
+}
