@@ -41,83 +41,6 @@
   margin: 0 auto;
 }
 @font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPN-Co.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: local('Raleway Medium'), local('Raleway-Medium'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwN4raqE.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwPIsaqE.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local('Raleway Bold'), local('Raleway-Bold'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwJYtaqE.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: local('Raleway ExtraBold'), local('Raleway-ExtraBold'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwIouaqE.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPN-Co.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: local('Raleway Medium'), local('Raleway-Medium'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwN4raqE.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwPIsaqE.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local('Raleway Bold'), local('Raleway-Bold'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwJYtaqE.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: local('Raleway ExtraBold'), local('Raleway-ExtraBold'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwIouaqE.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
-}
-@font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 200;
@@ -654,6 +577,52 @@
 .video-descr-time {
   color: #c7b299;
   font: 400 14px/24px Montserrat, Arial, sans-serif;
+}
+.mobiles {
+  padding: 195px 388px 179px;
+  background: url(../img/iphone_in_hand.png) 423px 616px no-repeat #fbfaf8;
+  background-position: 423px 79px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.mobiles-descr {
+  width: 664px;
+  text-align: left;
+}
+.mobiles-descr-title {
+  margin: 0 0 30px 0;
+  color: #555;
+  font: 600 30px/1.2 Raleway, Arial, sans-serif;
+}
+.mobiles-descr-text {
+  margin: 0 0 35px 0;
+  color: #8c8c8c;
+  font: 300 16px/25px Montserrat, Arial, sans-serif;
+}
+.mobiles-descr-list {
+  list-style: none;
+  margin: 0 0 0 50px;
+  color: #8c8c8c;
+  font: 300 16px/28px Montserrat, Arial, sans-serif;
+}
+.mobiles-descr-list-item {
+  position: relative;
+}
+.mobiles-descr-list-item::before {
+  content: ">";
+  width: 21px;
+  height: 21px;
+  text-align: center;
+  line-height: 21px;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+  position: absolute;
+  left: -39px;
+  top: 3px;
+  background: #c7b299;
 }
 .partners {
   padding: 140px 405px;
