@@ -86,7 +86,7 @@
 
   .main-header-cart {
     padding: 0;
-    margin: 0 24px 0 0;
+    margin: 0 22px 0 0;
     background: transparent;
     border: none;
     fill: @main-color;
@@ -101,14 +101,45 @@
     }
   }
 
-  .main-header-form-search {
-    width: 24px;
-    height: 24px;
-    outline: none;
-    border: none;
-    color: @main-color;
-    background: url(../img/test_layout_icon_search.png) center/cover no-repeat transparent;
+  .main-header-form {
+    position: relative;
 
+    &-label-icon {
+      width: 28px;
+      height: 28px;
+      fill: @main-color;
+
+      &:hover {
+        fill: @header-hover-nav-color;
+      }
+    }
+
+    &-search {
+      width: 0px;
+      min-height: 0px;
+      opacity: 0;
+      scale: 0;
+      padding: 5px;
+      outline: none;
+      box-sizing: border-box;
+      background-color: transparent;
+      border: none;
+      position: absolute;
+      top: 40px;
+      left: -119px;
+      color: @main-color;
+      text-transform: capitalize;
+      .txt-font(100, Montserrat, 16px, 20px);
+
+      &:focus {
+        width: 150px;
+        min-height: 20px;
+        opacity: 1;
+        scale: 1;
+        border: 2px solid #fff;
+        transition: all 1s ease;
+      }
+    }
   }
 }
 

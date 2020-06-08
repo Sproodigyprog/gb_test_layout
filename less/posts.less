@@ -93,11 +93,21 @@
         color: @posts-item-link-color;
         text-decoration: none;
         text-transform: capitalize;
+        position: relative;
       }
 
       &-text,
       &-link {
         .txt-font(300, Montserrat, 14px, 20px);
+      }
+
+      &-link::after {
+        content: '';
+        border: 5px solid transparent;
+        border-left: 5px solid @posts-item-link-color;
+        position: absolute;
+        top: 5px;
+        right: -18px;
       }
 
       &:hover .posts-galery-item-img {
@@ -107,6 +117,7 @@
       &:hover {
         background: @posts-item-bg-hover-color;
       }
+
       &:hover .posts-galery-item-date-day {
         background: @posts-item-link-color;
         color: @main-color;
@@ -119,6 +130,10 @@
 
       &:hover .posts-galery-item-link:hover {
         color: @main-color;
+      }
+
+      &:hover .posts-galery-item-link:hover.posts-galery-item-link::after {
+        border-left: 5px solid @main-color;
       }
 
       &:hover .posts-galery-item-link:active {
@@ -150,7 +165,7 @@
 
         &-icon {
           fill: @posts-item-link-color;
-          
+
           &:hover {
             fill: @posts-galery-nav-btn-hover-color;
           }
