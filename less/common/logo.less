@@ -1,0 +1,34 @@
+// main: ../style.less
+
+.logo {
+  width: 181px;
+  margin: 0 219px 0 0;
+  text-decoration: none;
+  .flex-box(nowrap, space-between, center);
+
+  &-icon {
+    fill: @main-color;
+  }
+
+  &-caption {
+    color: @main-color;
+    text-transform: capitalize;
+    .txt-font(400, Raleway, 34px, 1.2);
+  }
+
+  &:hover .logo-icon {
+    fill: #c7b299;
+  }
+
+  &:hover .logo-caption {
+    color: #c7b299;
+  }
+
+  &:active .logo-icon {
+    fill: @header-active-nav-color;
+  }
+
+  &:active .logo-caption {
+    color: @header-active-nav-color;
+  }
+}

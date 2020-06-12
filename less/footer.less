@@ -1,0 +1,234 @@
+// main: style.less
+
+// Variables
+
+@footer-content-bg-color: #191919;
+@footer-subfooter-bg-color: #111;
+@footer-text-color: #555;
+@footer-subfooter-owners-color: #959595;
+@footer-posts-time-color: #363636;
+@footer-twitter-mark-color: #00bff3;
+@footer-link-hover-color: #c7b299;
+@footer-link-active-color: #f4a034;
+@footer-delimiter-color: #252525;
+@footer-widget-img-bg-color: #777;
+
+// Mixins
+
+.footer-titles() {
+  margin: 0 0 30px 0;
+  color: @main-color;
+  text-transform: capitalize;
+  .txt-font(700, Raleway, 24px, 1.2px);
+}
+
+.link() {
+  padding: 21px 0;
+  border-bottom: 2px solid @footer-delimiter-color;
+  color: @footer-text-color;
+
+  &-time {
+    margin: 0 0 5px 0;
+    color: @footer-posts-time-color;
+    .txt-font(300, Montserrat, 12px, 20px);
+  }
+
+  &-txt {
+    margin: 0;
+    color: @footer-text-color;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    .txt-font(300, Montserrat, 14px, 20px);
+  }
+
+  &:hover &-time {
+    color: @main-color;
+  }
+
+  &:hover &-txt {
+    color: @footer-link-hover-color;
+  }
+
+  &:active &-time {
+    color: @footer-link-active-color;
+  }
+
+  &:active &-txt {
+    color: @footer-link-active-color;
+  }
+
+  &:first-of-type {
+    padding: 0 0 21px 0;
+  }
+
+  &:last-of-type {
+    border: none;
+    padding: 21px 0 0 0;
+  }
+}
+
+// Common styles
+
+.logo-reset {
+  margin: 0 0 20px 0;
+
+  &:hover .logo-reset-icon {
+    fill: @main-color;
+  }
+
+  &:hover .logo-reset-caption {
+    color: @main-color;
+  }
+}
+
+.footer-link {
+  display: block;
+  text-decoration: none;
+}
+
+.twitter-mark {
+  color: @footer-twitter-mark-color;
+}
+
+.footer-subfooter-owners {
+  color: @footer-subfooter-owners-color;
+}
+
+.something {
+  color: @footer-subfooter-owners-color;
+}
+
+// Styles
+
+.footer {
+  background: @footer-content-bg-color;
+
+  &-content {
+    padding: 80px 375px;
+    .flex-box(  wrap, space-between, flex-start);
+
+    &-article {
+      width: 261px;
+
+      &-txt {
+        margin: 0 0 20px 0;
+        color: @footer-text-color;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+        .txt-font(300, Montserrat, 14px, 24px);
+      }
+
+      &-link {
+        margin: 0;
+
+        &:hover {
+          color: @main-color;
+        }
+
+        &:hover::after {
+          border-left: 5px solid @main-color;
+        }
+
+        &:active {
+          color: @footer-link-active-color;
+        }
+
+        &:active::after {
+          border-left: 5px solid @footer-link-active-color;
+        }
+      }
+    }
+
+    &-posts {
+      width: 271px;
+
+      &-title {
+        .footer-titles();
+      }
+
+      &-link {
+        .link();
+      }
+
+    }
+
+    &-twitter {
+      width: 271px;
+
+      &-title {
+        .footer-titles();
+      }
+
+      &-link {
+        .link();
+      }
+    }
+
+    &-widget {
+      width: 271px;
+
+      &-title {
+        .footer-titles();
+      }
+
+      &-galery {
+        margin: 0;
+        align-content: space-between;
+        .flex-box(wrap, space-between, center);
+
+        &-link {
+          margin: 2px;
+
+          &:hover {
+            opacity: .5;
+          }
+
+          &:active {
+            opacity: 1;
+          }
+        }
+
+        &-img {
+          background: @footer-widget-img-bg-color;
+        }
+      }
+    }
+  }
+
+  &-subfooter {
+    padding: 45px 375px 52px;
+    background: @footer-subfooter-bg-color;
+    .flex-box(wrap, space-between, center);
+
+    &-rights,
+    &-design {
+      margin: 0;
+      list-style: none;
+      .flex-box(wrap, center, center);
+
+      &-item {
+        padding: 0 9px;
+        border-right: 1px solid @footer-delimiter-color;
+        .txt-font(300, Montserrat, 13px, 13px);
+
+         &:last-child {
+           border: none;
+         }
+      }
+    }
+
+    &-link {
+      color: @footer-text-color;
+
+      &:hover {
+        color: @footer-link-hover-color;
+      }
+
+      &:active {
+        color: @footer-link-active-color;
+      }
+    }
+  }
+}
