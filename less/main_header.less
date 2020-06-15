@@ -25,6 +25,10 @@
     width: 637px;
     margin: 0 63px 0 0;
 
+    &-toggle {
+      display: none;
+    }
+
     &-list {
       padding: 0;
       .flex-box(wrap, space-between, center);
@@ -97,8 +101,8 @@
       text-transform: capitalize;
       .txt-font(100, Montserrat, 16px, 20px);
 
-      &:focus {
-        width: 150px;
+        &:focus {
+        min-width: 150px;
         min-height: 20px;
         opacity: 1;
         scale: 1;
