@@ -1147,7 +1147,7 @@
     margin: 20px auto;
   }
   .main-header .main-menu-list-item-link {
-    font-size: 32px;
+    font-size: 25px;
   }
   .main-header .main-menu-toggle:checked ~ .main-menu-btn::after,
   .main-header .main-menu-toggle:checked ~ .main-menu-btn::before {
