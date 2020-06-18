@@ -1085,9 +1085,7 @@
     text-align-last: center;
     margin: 0 0 20px 0;
   }
-  .main-header .carousel-pagination {
-    top: 20vh;
-  }
+  .main-header .carousel-pagination,
   .main-header .carousel-arrow {
     display: none;
   }
